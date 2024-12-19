@@ -138,7 +138,6 @@ if(state[index] == "hit"){
 	}else{
 		image_speed = 0;
 		index = 0;
-		
 	}
 }
 
