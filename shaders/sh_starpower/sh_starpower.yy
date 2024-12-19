@@ -1,0 +1,12 @@
+{
+  "$GMShader":"",
+  "%Name":"sh_starpower",
+  "name":"sh_starpower",
+  "parent":{
+    "name":"Shaders",
+    "path":"folders/Shaders.yy",
+  },
+  "resourceType":"GMShader",
+  "resourceVersion":"2.0",
+  "type":3,
+}
