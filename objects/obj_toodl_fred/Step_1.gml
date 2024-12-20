@@ -31,5 +31,9 @@ if(v_hp <= 0){
 		audio_play_sound(Destroy_1, 1, false);
 	}
 	
-	room_restart();
+	if(!instance_exists(obj_toodl_tid)){
+		room_restart();
+	}else{
+		instance_destroy();
+	}
 }
