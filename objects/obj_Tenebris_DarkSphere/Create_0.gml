@@ -4,10 +4,12 @@
 v_hp = 100;
 v_damage = 10;
 v_speed = 4;
+v_desgracia = random_range(0,10);
 
 spr_idle = spr_Tenebris_DarkSphere_Idle;
 spr_walk = spr_Tenebris_DarkSphere_Walk;
 spr_attack1 = spr_Tenebris_DarkSphere_Attack1;
+spr_attack2 = spr_Tenebris_DarkSphere_Attack2;
 spr_hit = spr_Tenebris_DarkSphere_Hit;
 
 index = 0;
@@ -18,6 +20,8 @@ state[2] = "attack1";
 state[3] = "attack2";
 state[4] = "attack3";
 state[5] = "hit";
+
+sentido = 0;
 
 av = 0;
 attackPos = false;
@@ -31,5 +35,6 @@ inte = true;
 shearch = false;
 locate = false; 
 
-choose_time1 = 100;
+choose_time1 = 100 - v_desgracia;
 alarm[0] = choose_time1;
+maskHit = noone;

@@ -1,6 +1,8 @@
 /// @description Inserte aquí la descripción
 // Puede escribir su código en este editor
 
+// image_angle = direction;
+
 if(v_hp <= 0){
 	instance_destroy();
 }
@@ -58,6 +60,25 @@ if(state[index] == "idle"){
 	}
 	
 	
+}
+	
+if(state[index] == "walk"){
+	
+	sprite_index = spr_walk;
+	image_speed = 1;
+	
+	if(sentido == 1){ // Avanzar
+		motion_set(irandom(360), 2);
+		sentido = 3; // Transicción
+	}else if(sentido == 2){ // Alejarse
+		mp_linear_step_object(objP.x,objP.y,-1,obj_enemy);
+	}
+	
+	if(!place_free(x,y)){
+		vspeed = -vspeed;
+		hspeed = -hspeed;
+	}
+		
 }
 
 if(state[index] == "attack1"){
@@ -131,7 +152,10 @@ if(state[index] == "hit"){
 	
 	sprite_index = spr_hit;
 	
-	scr_clear_hitmask(maskHit);
+	if(maskHit != noone && instance_exists(maskHit))
+		{
+			scr_clear_hitmask(maskHit);
+		}
 	
 	if(image_index < sprite_get_number(spr_hit)){
 		image_speed = 1;
@@ -140,6 +164,25 @@ if(state[index] == "hit"){
 		index = 0;
 	}
 }
+
+if(state[index] == "attack2"){
+	
+	sprite_index = spr_attack2;
+	image_speed = 1.4;
+	
+	if(image_index == 14){
+		
+		repeat(12){
+			ball = instance_create_layer(x,y,"Instances",obj_ballshot_tenebris);
+			ball.direction = random_range(0,360);
+			ball.speed = 6;
+		}
+		
+	}else if(image_index >= sprite_get_number(spr_attack2)-1){
+		index = choose(0,2)
+	}
+}
+	
 
 #endregion
 

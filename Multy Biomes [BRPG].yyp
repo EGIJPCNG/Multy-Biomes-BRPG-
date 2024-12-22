@@ -58,7 +58,7 @@
   "resources":[
     {"id":{"name":"fnt_hit","path":"fonts/fnt_hit/fnt_hit.yy",},},
     {"id":{"name":"fnt_inv","path":"fonts/fnt_inv/fnt_inv.yy",},},
-    {"id":{"name":"d","path":"objects/d/d.yy",},},
+    {"id":{"name":"obj_ballshot_tenebris","path":"objects/obj_ballshot_tenebris/obj_ballshot_tenebris.yy",},},
     {"id":{"name":"obj_cuchillo","path":"objects/obj_cuchillo/obj_cuchillo.yy",},},
     {"id":{"name":"obj_enemy","path":"objects/obj_enemy/obj_enemy.yy",},},
     {"id":{"name":"obj_hit_mask_enemy","path":"objects/obj_hit_mask_enemy/obj_hit_mask_enemy.yy",},},
@@ -101,6 +101,7 @@
     {"id":{"name":"back_Grass","path":"sprites/back_Grass/back_Grass.yy",},},
     {"id":{"name":"spr_all_start_t","path":"sprites/spr_all_start_t/spr_all_start_t.yy",},},
     {"id":{"name":"spr_ballshot_tenebris","path":"sprites/spr_ballshot_tenebris/spr_ballshot_tenebris.yy",},},
+    {"id":{"name":"spr_ballshot_tenebris36","path":"sprites/spr_ballshot_tenebris36/spr_ballshot_tenebris36.yy",},},
     {"id":{"name":"spr_cuchillo_1","path":"sprites/spr_cuchillo_1/spr_cuchillo_1.yy",},},
     {"id":{"name":"spr_hit_basic","path":"sprites/spr_hit_basic/spr_hit_basic.yy",},},
     {"id":{"name":"spr_hive_basic","path":"sprites/spr_hive_basic/spr_hive_basic.yy",},},
@@ -109,6 +110,7 @@
     {"id":{"name":"spr_solid","path":"sprites/spr_solid/spr_solid.yy",},},
     {"id":{"name":"spr_Tenebris_DarkSphere_Attack1_1","path":"sprites/spr_Tenebris_DarkSphere_Attack1_1/spr_Tenebris_DarkSphere_Attack1_1.yy",},},
     {"id":{"name":"spr_Tenebris_DarkSphere_Attack1","path":"sprites/spr_Tenebris_DarkSphere_Attack1/spr_Tenebris_DarkSphere_Attack1.yy",},},
+    {"id":{"name":"spr_Tenebris_DarkSphere_Attack2","path":"sprites/spr_Tenebris_DarkSphere_Attack2/spr_Tenebris_DarkSphere_Attack2.yy",},},
     {"id":{"name":"spr_Tenebris_DarkSphere_Hit","path":"sprites/spr_Tenebris_DarkSphere_Hit/spr_Tenebris_DarkSphere_Hit.yy",},},
     {"id":{"name":"spr_Tenebris_DarkSphere_Idle","path":"sprites/spr_Tenebris_DarkSphere_Idle/spr_Tenebris_DarkSphere_Idle.yy",},},
     {"id":{"name":"spr_Tenebris_DarkSphere_Walk","path":"sprites/spr_Tenebris_DarkSphere_Walk/spr_Tenebris_DarkSphere_Walk.yy",},},
@@ -139,9 +141,9 @@
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
+    {"roomId":{"name":"Room1_2","path":"rooms/Room1_2/Room1_2.yy",},},
     {"roomId":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
     {"roomId":{"name":"Room1_1","path":"rooms/Room1_1/Room1_1.yy",},},
-    {"roomId":{"name":"Room1_2","path":"rooms/Room1_2/Room1_2.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[
