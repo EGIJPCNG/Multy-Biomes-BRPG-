@@ -77,7 +77,11 @@
     {"id":{"name":"obj_Toodldoll_train_1","path":"objects/obj_Toodldoll_train_1/obj_Toodldoll_train_1.yy",},},
     {"id":{"name":"obj_Toodldoll_train","path":"objects/obj_Toodldoll_train/obj_Toodldoll_train.yy",},},
     {"id":{"name":"oController_View","path":"objects/oController_View/oController_View.yy",},},
+<<<<<<< HEAD
     {"id":{"name":"Prueba_Luz","path":"rooms/Prueba_Luz/Prueba_Luz.yy",},},
+=======
+    {"id":{"name":"map_one","path":"rooms/map_one/map_one.yy",},},
+>>>>>>> d529d5a967fc93e02758f2d1495f5c21486dbb16
     {"id":{"name":"Room1_1","path":"rooms/Room1_1/Room1_1.yy",},},
     {"id":{"name":"Room1_2","path":"rooms/Room1_2/Room1_2.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
@@ -105,6 +109,10 @@
     {"id":{"name":"WoosMazo","path":"sounds/WoosMazo/WoosMazo.yy",},},
     {"id":{"name":"back_Grass_1","path":"sprites/back_Grass_1/back_Grass_1.yy",},},
     {"id":{"name":"back_Grass","path":"sprites/back_Grass/back_Grass.yy",},},
+    {"id":{"name":"back_sand","path":"sprites/back_sand/back_sand.yy",},},
+    {"id":{"name":"back_Tiles_Grass_v1","path":"sprites/back_Tiles_Grass_v1/back_Tiles_Grass_v1.yy",},},
+    {"id":{"name":"back_Tiles_Grass_v2","path":"sprites/back_Tiles_Grass_v2/back_Tiles_Grass_v2.yy",},},
+    {"id":{"name":"back_Tiles_Terrain_wn","path":"sprites/back_Tiles_Terrain_wn/back_Tiles_Terrain_wn.yy",},},
     {"id":{"name":"spr_all_start_t","path":"sprites/spr_all_start_t/spr_all_start_t.yy",},},
     {"id":{"name":"spr_antorcha_llama","path":"sprites/spr_antorcha_llama/spr_antorcha_llama.yy",},},
     {"id":{"name":"spr_antorcha","path":"sprites/spr_antorcha/spr_antorcha.yy",},},
@@ -143,13 +151,20 @@
     {"id":{"name":"Tiles_Suelo_Grass_3","path":"sprites/Tiles_Suelo_Grass_3/Tiles_Suelo_Grass_3.yy",},},
     {"id":{"name":"tile_set_grass1","path":"tilesets/tile_set_grass1/tile_set_grass1.yy",},},
     {"id":{"name":"tile_set_sand1","path":"tilesets/tile_set_sand1/tile_set_sand1.yy",},},
+    {"id":{"name":"Tiles_set_grass_v1","path":"tilesets/Tiles_set_grass_v1/Tiles_set_grass_v1.yy",},},
+    {"id":{"name":"Tiles_set_grass_v2","path":"tilesets/Tiles_set_grass_v2/Tiles_set_grass_v2.yy",},},
+    {"id":{"name":"Tiles_set_terrain_vwn","path":"tilesets/Tiles_set_terrain_vwn/Tiles_set_terrain_vwn.yy",},},
     {"id":{"name":"TileSet1","path":"tilesets/TileSet1/TileSet1.yy",},},
     {"id":{"name":"tml_index","path":"timelines/tml_index/tml_index.yy",},},
   ],
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
+<<<<<<< HEAD
     {"roomId":{"name":"Prueba_Luz","path":"rooms/Prueba_Luz/Prueba_Luz.yy",},},
+=======
+    {"roomId":{"name":"map_one","path":"rooms/map_one/map_one.yy",},},
+>>>>>>> d529d5a967fc93e02758f2d1495f5c21486dbb16
     {"roomId":{"name":"Room1_2","path":"rooms/Room1_2/Room1_2.yy",},},
     {"roomId":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
     {"roomId":{"name":"Room1_1","path":"rooms/Room1_1/Room1_1.yy",},},
