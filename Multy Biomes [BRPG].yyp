@@ -22,9 +22,9 @@
     {"$GMFolder":"","%Name":"Objetos","folderPath":"folders/Objetos.yy","name":"Objetos","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Controllers","folderPath":"folders/Objetos/Controllers.yy","name":"Controllers","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Enemys","folderPath":"folders/Objetos/Enemys.yy","name":"Enemys","resourceType":"GMFolder","resourceVersion":"2.0",},
-    {"$GMFolder":"","%Name":"MOI","folderPath":"folders/Objetos/MOI.yy","name":"MOI","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Interacte","folderPath":"folders/Objetos/Interacte.yy","name":"Interacte","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Items","folderPath":"folders/Objetos/Items.yy","name":"Items","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"MOI","folderPath":"folders/Objetos/MOI.yy","name":"MOI","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Players","folderPath":"folders/Objetos/Players.yy","name":"Players","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Solids","folderPath":"folders/Objetos/Solids.yy","name":"Solids","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Particle Systems","folderPath":"folders/Particle Systems.yy","name":"Particle Systems","resourceType":"GMFolder","resourceVersion":"2.0",},
@@ -77,11 +77,7 @@
     {"id":{"name":"obj_Toodldoll_train_1","path":"objects/obj_Toodldoll_train_1/obj_Toodldoll_train_1.yy",},},
     {"id":{"name":"obj_Toodldoll_train","path":"objects/obj_Toodldoll_train/obj_Toodldoll_train.yy",},},
     {"id":{"name":"oController_View","path":"objects/oController_View/oController_View.yy",},},
-<<<<<<< HEAD
     {"id":{"name":"Prueba_Luz","path":"rooms/Prueba_Luz/Prueba_Luz.yy",},},
-=======
-    {"id":{"name":"map_one","path":"rooms/map_one/map_one.yy",},},
->>>>>>> d529d5a967fc93e02758f2d1495f5c21486dbb16
     {"id":{"name":"Room1_1","path":"rooms/Room1_1/Room1_1.yy",},},
     {"id":{"name":"Room1_2","path":"rooms/Room1_2/Room1_2.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
@@ -160,11 +156,7 @@
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
-<<<<<<< HEAD
     {"roomId":{"name":"Prueba_Luz","path":"rooms/Prueba_Luz/Prueba_Luz.yy",},},
-=======
-    {"roomId":{"name":"map_one","path":"rooms/map_one/map_one.yy",},},
->>>>>>> d529d5a967fc93e02758f2d1495f5c21486dbb16
     {"roomId":{"name":"Room1_2","path":"rooms/Room1_2/Room1_2.yy",},},
     {"roomId":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
     {"roomId":{"name":"Room1_1","path":"rooms/Room1_1/Room1_1.yy",},},
