@@ -4,8 +4,8 @@
 global.camera_width = 320;
 global.camera_height = 240;
 global.zoom_speed = 0.1; // Velocidad de zoom
-global.min_zoom = 1;   // Zoom mínimo
-global.max_zoom = 2.0;   // Zoom máximo
+global.min_zoom = 2;   // Zoom mínimo
+global.max_zoom = 4.0;   // Zoom máximo
 
 // En el evento Create del objeto oController_View
 

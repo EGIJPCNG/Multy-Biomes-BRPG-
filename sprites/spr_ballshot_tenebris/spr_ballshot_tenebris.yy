@@ -32,8 +32,8 @@
   "nineSlice":null,
   "origin":4,
   "parent":{
-    "name":"enemys",
-    "path":"folders/Sprites/enemys.yy",
+    "name":"grupo1",
+    "path":"folders/Sprites/enemys/Bosses/grupo1.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

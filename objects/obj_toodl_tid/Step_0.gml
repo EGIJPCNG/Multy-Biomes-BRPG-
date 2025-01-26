@@ -1,15 +1,16 @@
 /// @description Inserte aquí la descripción
 // Puede escribir su código en este editor
 
+#region // Declarar Variables
 p2 = instance_exists(obj_toodl_fred)
 
-var _key_right = keyboard_check(vk_right) or (keyboard_check(ord("D")) -p2);
-var _key_left = keyboard_check(vk_left)  or (keyboard_check(ord("A")) -p2);
-var _key_down = keyboard_check(vk_down)  or (keyboard_check(ord("S")) -p2);
-var _key_up = keyboard_check(vk_up)  or (keyboard_check(ord("W")) -p2);
+var _key_right = (keyboard_check(vk_right) or (keyboard_check(ord("D")) -p2)) - keyboard_check_released(ord("X"));
+var _key_left = (keyboard_check(vk_left)  or (keyboard_check(ord("A")) -p2)) - keyboard_check_released(ord("X"));
+var _key_down = (keyboard_check(vk_down)  or (keyboard_check(ord("S")) -p2)) - keyboard_check_released(ord("X"));
+var _key_up = (keyboard_check(vk_up)  or (keyboard_check(ord("W")) -p2)) - keyboard_check_released(ord("X"));
 
 var _run =  keyboard_check(vk_shift);
-var _downwalk =  keyboard_check(vk_shift) && keyboard_check(ord("Z"));
+var _downwalk = keyboard_check(ord("Z"));
 var _walk = string(_key_right)  + string(_key_left) + string(_key_down) + string(_key_up);
 
 var _attack_f2 = keyboard_check_released(ord("X"));
@@ -19,14 +20,42 @@ var _control = keyboard_check(vk_control);
 
 var move_x = 0;
 var move_y = 0;
+#endregion
 
+#region // Solución Parcial profundidades de capas
+depth = -y;
+
+/*
 if (y < room_height/2){
 	depth = -y;
 }else if(y > room_height/2){
 	depth = 100;
+}*/
+#endregion
+
+#region // Efecto de Sombra
+
+if (!instance_exists(obj_luz) and (sombra != noone)){
+	instance_destroy(sombra);
+	sombra = noone;
 }
 
+if (instance_exists(obj_luz) and (sombra == noone)){
+	sombra = instance_create_layer(x,y,"Instances", obj_sombra);
+	sombra.sprite_index = sprite_index;
+	sombra.image_index = image_index;
+	sombra.direction_sombra = point_direction(x,y,obj_luz.x,obj_luz.y) + 90;
+}
 
+if(sombra != noone){
+	sombra.direccion_sombra = point_direction(x,y,obj_luz.x,obj_luz.y) + 90;
+	sombra.sprite_index = sprite_index;
+	sombra.image_index = image_index;
+	sombra.y = y;
+	sombra.x = x;
+}
+
+#endregion
 
 /// SISTEMA DE MOVIMIENTO
 
@@ -58,14 +87,14 @@ if (y < room_height/2){
 	
 		// v_speed = 2.78 + (v_estamina / v_estamina_max) * 2; // Velocidad entre 2 y 8
 
-		image_speed = 1.4 * v_speed;
+		image_speed = 0.4 * v_speed;
 		
 	}else if(_downwalk) {
 		 v_speed = 1; // Velocidad caminar despacio
 		 image_speed = 0.4;
 	}else{
 		v_speed = 2;
-		image_speed = 0.8;
+		image_speed = 0.6;
 	
 		if(v_estamina <= v_estamina_max)
 			{
@@ -82,11 +111,10 @@ if (y < room_height/2){
 				if( place_free(x+v_speed,y))
 					move_x += v_speed;
 		
-				damage_area_x = x+12;
+				damage_area_x = x+24; // 12
 				damage_area_y = y;
 				sprite_index = s_right;
 				image_xscale = 1;
-				image_speed = 0.6;
 				direc = 0;
 		
 			}else if(_key_left)  && !(_key_right) {
@@ -94,10 +122,9 @@ if (y < room_height/2){
 				if(place_free(x-v_speed,y))
 					move_x -= v_speed;
 		
-				damage_area_x = x-12;
+				damage_area_x = x-24;
 				damage_area_y = y;
 				sprite_index = s_right;
-				image_speed = 0.6;
 				image_xscale = -1;
 				direc = 0;
 			}
@@ -108,9 +135,8 @@ if (y < room_height/2){
 					move_y -= v_speed;
 		
 				damage_area_x = x;
-				damage_area_y = y-12;
+				damage_area_y = y-24;
 				sprite_index = s_up;
-				image_speed = 0.6;
 				direc = 1;
 		
 			}else if(_key_down)  && !(_key_up) {
@@ -118,9 +144,8 @@ if (y < room_height/2){
 					move_y += v_speed;
 		
 				damage_area_x = x;
-				damage_area_y = y+12;
+				damage_area_y = y+24;
 				sprite_index = s_dow;
-				image_speed = 0.6;
 				direc = 2;
 			}
 	
@@ -157,8 +182,6 @@ if (y < room_height/2){
 	
 { // SISTEMA DE COMBATE
 		
-
-	
 	// Actualizar el temporizador
 	attack_timer -= delta_time / 1000000; // delta_time es el tiempo desde el último frame en microsegundos
 	

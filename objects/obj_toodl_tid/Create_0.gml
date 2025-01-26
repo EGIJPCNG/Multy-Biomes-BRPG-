@@ -5,6 +5,7 @@ image_index = 0;
 image_speed = 0.4;
 sprite_index = spr_Toodl_Tid;
 
+sombra = noone;
 
 sound[0] = Damage_1;
 sound[1] = punch_1;

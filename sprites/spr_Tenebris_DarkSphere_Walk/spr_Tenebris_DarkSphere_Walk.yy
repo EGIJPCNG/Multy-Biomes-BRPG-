@@ -29,7 +29,7 @@
   ],
   "gridX":0,
   "gridY":0,
-  "height":48,
+  "height":96,
   "HTile":false,
   "layers":[
     {"$GMImageLayer":"","%Name":"a6c38d45-e2f7-4477-bd6b-b83b91430823","blendMode":0,"displayName":"default","isLocked":false,"name":"a6c38d45-e2f7-4477-bd6b-b83b91430823","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
@@ -38,8 +38,8 @@
   "nineSlice":null,
   "origin":4,
   "parent":{
-    "name":"enemys",
-    "path":"folders/Sprites/enemys.yy",
+    "name":"grupo1",
+    "path":"folders/Sprites/enemys/Bosses/grupo1.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",
@@ -127,8 +127,8 @@
     ],
     "visibleRange":null,
     "volume":1.0,
-    "xorigin":24,
-    "yorigin":24,
+    "xorigin":48,
+    "yorigin":48,
   },
   "swatchColours":null,
   "swfPrecision":0.5,
@@ -138,5 +138,5 @@
   },
   "type":0,
   "VTile":false,
-  "width":48,
+  "width":96,
 }

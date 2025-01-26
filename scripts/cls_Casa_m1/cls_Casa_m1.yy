@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"cls_Casa_m1",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"cls_Casa_m1",
+  "parent":{
+    "name":"Casas",
+    "path":"folders/Scripts/Clases/Casas.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

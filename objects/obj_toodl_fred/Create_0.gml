@@ -5,6 +5,8 @@ image_index = 0;
 image_speed = 0.4;
 sprite_index = spr_Toodl_Fred;
 
+// show_message("Toodl Fred, TIENE UN CUCHILLO");
+// show_message("TEN CUIDADO ES PELIGROSO");
 
 sound[0] = Damage_1;
 sound[1] = punch_1;
@@ -18,9 +20,9 @@ alarm[0] = 60;
 
 // Relativos
 v_speed = 2;
-v_damage_max = 2
+v_damage_max = 8; // (cuchillo 5) sin cuchillo 2, con espada  8  
 v_damage = v_damage_max;
-v_dmgcritical = 8;
+v_dmgcritical = 16; // 8 (sin espada) con espada 16
 v_armor = 0.5;
 
 inte = false;

@@ -65,8 +65,8 @@
   ],
   "name":"Room1",
   "parent":{
-    "name":"Salas",
-    "path":"folders/Salas.yy",
+    "name":"Resource",
+    "path":"folders/Salas/Resource.yy",
   },
   "parentRoom":null,
   "physicsSettings":{

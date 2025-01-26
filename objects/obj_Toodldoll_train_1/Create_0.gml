@@ -5,6 +5,8 @@ image_index = 0;
 image_speed = 0;
 sprite_index = spr_ToodlDoll_Train;
 
+sombra = noone;
+
 // Parametros
 v_hp_max = 100;
 v_hp = v_hp_max;

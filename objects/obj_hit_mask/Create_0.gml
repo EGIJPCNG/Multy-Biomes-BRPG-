@@ -1,6 +1,10 @@
 /// @description Inserte aquí la descripción
 // Puede escribir su código en este editor
 
+depth = -10000
+image_xscale = 2;
+image_yscale = 2;
+
 alarm[0] = 5;
 v_damage = 0;
 v_damaging = true;

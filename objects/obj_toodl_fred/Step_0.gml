@@ -20,11 +20,11 @@ var _control = keyboard_check(ord("Q"));
 var move_x = 0;
 var move_y = 0;
 
-if (y < room_height/2){
-	depth = -y;
-}else if(y > room_height/2){
-	depth = 100;
-}
+//if (y < room_height/2){
+depth = -y;
+//}else if(y > room_height/2){
+//	depth = 100;
+//}
 
 
 /// SISTEMA DE MOVIMIENTO
@@ -77,7 +77,7 @@ if (y < room_height/2){
 		if (place_free(x+v_speed,y))
 			move_x += v_speed;
 			
-		damage_area_x = x+12;
+		damage_area_x = x+24;
 		damage_area_y = y;
 		sprite_index = s_right;
 		image_xscale = 1;
@@ -87,7 +87,7 @@ if (y < room_height/2){
 		if  (place_free(x-v_speed,y))
 			move_x -= v_speed;
 			
-		damage_area_x = x-12;
+		damage_area_x = x-24;
 		damage_area_y = y;
 		sprite_index = s_right;
 		image_speed = 0.6;
@@ -100,7 +100,7 @@ if (y < room_height/2){
 			move_y -= v_speed;
 			
 		damage_area_x = x;
-		damage_area_y = y-12;
+		damage_area_y = y-24;
 		sprite_index = s_up;
 		image_speed = 0.6;
 	}else if(_key_down)  && !(_key_up) {
@@ -109,7 +109,7 @@ if (y < room_height/2){
 			move_y += v_speed;
 			
 		damage_area_x = x;
-		damage_area_y = y+12;
+		damage_area_y = y+24;
 		sprite_index = s_dow;
 		image_speed = 0.6;
 	}

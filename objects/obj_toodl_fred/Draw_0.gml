@@ -12,10 +12,10 @@ draw_self();
 
 if (inte){ // Mostrar estadisticas
 	// Configuración de la barra de estamina
-	var bar_width = 24; // Ancho de la barra
-	var bar_height = 4; // Altura de la barra
+	var bar_width = 48; // Ancho de la barra
+	var bar_height = 8; // Altura de la barra
 	var bar_x = (x) - bar_width / 2; // Posición X centrada sobre el jugador
-	var bar_y = (y) - 20; // Posición Y por encima del jugador
+	var bar_y = (y) - 40; // Posición Y por encima del jugador
 
 	// Calcular el porcentaje de estamina
 	var hp_percentage = v_hp / v_hp_max;

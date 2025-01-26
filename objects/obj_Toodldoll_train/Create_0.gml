@@ -16,6 +16,8 @@ hit = false;
 timehit = 40;
 debug_hit = 0;
 
+attack_timer = 0;
+
 alarm[0] = timehit;
 
 spr_idle = spr_ToodlDoll_Train;

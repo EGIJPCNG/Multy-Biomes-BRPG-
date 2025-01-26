@@ -1,21 +1,19 @@
 /// @description Inserte aquí la descripción
 // Puede escribir su código en este editor
-/// @description Inserte aquí la descripción
-// Puede escribir su código en este editor
 
-draw_sprite(spr_shadow,0,x,y+1);
-// draw_text(x,y-sprite_width-16,v_estamina)
-// draw_text(x,y-sprite_width-24,speed)
+// Dibujar Sombra
+// draw_sprite(spr_shadow,0,x,y+1);
+
+// Dibujar Sprite
 draw_self();
 
-// Elementos Visuales
-
+#region // Elementos Visuales (BarLife, BarStamine)
 if (inte){ // Mostrar estadisticas
 	// Configuración de la barra de estamina
-	var bar_width = 24; // Ancho de la barra
-	var bar_height = 4; // Altura de la barra
+	var bar_width = 48; // Ancho de la barra
+	var bar_height = 8 // Altura de la barra
 	var bar_x = (x) - bar_width / 2; // Posición X centrada sobre el jugador
-	var bar_y = (y) - 20; // Posición Y por encima del jugador
+	var bar_y = (y) - 40; // Posición Y por encima del jugador
 
 	// Calcular el porcentaje de estamina
 	var hp_percentage = v_hp / v_hp_max;
@@ -31,8 +29,6 @@ if (inte){ // Mostrar estadisticas
 	
 	// Mostrar el daño infrigido
 	
-	
-	
 	if(sprite_index == spr_hit){
 		draw_set_font(fnt_hit);
 		yy += 1; 
@@ -42,6 +38,9 @@ if (inte){ // Mostrar estadisticas
 		
 	}
 	}
+#endregion
+
+#region // Pruebas
 /*
 // En el evento Draw del jugador
 if (v_allstar) {
@@ -58,3 +57,5 @@ if (v_allstar) {
 if (!v_allstar) {
     shader_reset();
 }*/
+#endregion
+
